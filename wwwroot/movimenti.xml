@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Movimenti>
+	<Movimento>
+		<Id>1</Id>
+		<Data>2025-10-30T00:00:00</Data>
+		<Descrizione>bollette</Descrizione>
+		<Importo>50</Importo>
+		<Entrata>false</Entrata>
+		<Categoria></Categoria>
+		<Note></Note>
+		<Tipo></Tipo>
+	</Movimento>
+	<Movimento>
+		<Id>2</Id>
+		<Data>2025-11-03T00:00:00</Data>
+		<Descrizione>bollette</Descrizione>
+		<Importo>250</Importo>
+		<Entrata>false</Entrata>
+		<Categoria>Utenze</Categoria>
+		<Note></Note>
+		<Tipo></Tipo>
+	</Movimento>
+	<Movimento>
+		<Id>3</Id>
+		<Data>2025-11-03T00:00:00</Data>
+		<Descrizione>stipendio</Descrizione>
+		<Importo>2500</Importo>
+		<Entrata>true</Entrata>
+		<Categoria></Categoria>
+		<Note></Note>
+		<Tipo></Tipo>
+	</Movimento>
+</Movimenti>

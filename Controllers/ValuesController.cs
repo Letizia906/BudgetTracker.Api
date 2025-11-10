@@ -31,5 +31,9 @@ namespace BudgetTracker.Api.Controllers
         public string Descrizione { get; set; }
         public double Importo { get; set; }
         public bool Entrata { get; set; }
+        public DateTime Data { get; internal set; }
+        public string? Categoria { get; internal set; }
+        public string? Note { get; internal set; }
+        public string? Tipo { get; internal set; }
     }
 }
