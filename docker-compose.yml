@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  budgettracker-api:
+    container_name: budgettracker-api
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "5001:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:8080
+    restart: unless-stopped
+
+  budgettracker-web:
+    container_name: budgettracker-web
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    ports:
+      - "5000:8080"
+    depends_on:
+      - budgettracker-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:8080
+      - API_BASE_URL=http://budgettracker-api:8080
+    restart: unless-stopped
